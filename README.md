@@ -1,113 +1,36 @@
-# PPS-Unidad3-Actividad2-JcMartin
-## Detección de equipos, puertos, servicios,vulnerabilidades.
-
-
-Obtención de información pública
-whois dominio.com
-
-
-Obtiene información sobre el registro de un dominio, incluyendo datos del propietario y servidores DNS.
-
-
-dnsrecon -d dominio.com
-
-
-Realiza una enumeración DNS para obtener subdominios, registros MX, TXT y otros datos relevantes.
-
-
-dnsrecon -d dominio.com -D subdominios.txt -t brt
-
-
-Usa fuerza bruta con una lista de palabras para descubrir subdominios ocultos.
-
-
-dnsrecon -d dominio.com -t axfr
-
-
-Intenta realizar una transferencia de zona DNS para obtener una lista completa de registros del dominio.
-
-
-
-Búsqueda de equipos, puertos y vulnerabilidades
-nmap -p- IP
-
-
-Escanea todos los puertos de un objetivo para identificar los abiertos.
-
-
-nmap -sV -sC -O IP
-
-
-Detecta versiones de servicios, ejecuta scripts de reconocimiento y obtiene información del sistema operativo.
-
-
-nmap --script=vuln IP
-
-
-Ejecuta scripts de detección de vulnerabilidades en el objetivo.
-
-
-*locate .nse | grep vuln
-
-
-Busca scripts NSE de Nmap relacionados con la detección de vulnerabilidades.
-
-
-nikto -h http://IP
-
-
-Escanea un servidor web en busca de vulnerabilidades y configuraciones erróneas.
-
-
-nikto -h http://IP -Tuning 1234567890
-
-
-Realiza un escaneo más exhaustivo probando todas las técnicas disponibles.
-
-
-
-Búsqueda de recursos en servidores web
-wfuzz -c -z file,/usr/share/seclists/Discovery/Web-Content/common.txt --hc 404 http://IP/FUZZ
-
-
-Fuerza bruta para encontrar directorios y archivos ocultos en un servidor web.
-
-
-wfuzz -c -z file,wordlist.txt -z list,.php,.html,.txt --hc 404 http://IP/FUZZFUZ2Z
-
-
-Busca archivos en el servidor con extensiones específicas.
-
-
-dirb http://IP/
-
-
-Escanea un servidor web en busca de directorios y archivos ocultos.
-
-
-dirb http://IP/ wordlist.txt
-
-
-Usa una lista de palabras personalizada para mejorar la búsqueda de recursos.
-
-
-
-Búsqueda de vulnerabilidades con SearchSploit
-searchsploit apache
-
-
-Busca vulnerabilidades y exploits disponibles para Apache en la base de datos de Exploit-DB.
-
-
-searchsploit -x 12345
-
-
-Muestra detalles completos sobre un exploit específico identificado por su ID.
-
-
-searchsploit -m 12345
-
-
-Copia un exploit de la base de datos a tu directorio actual para su posterior análisis y prueba.
-
-
+# PPS-Unidad3Actividad2-JoseMi-
+Unidad 3 - Actividad 2. Detección de equipos, puertos, servicios,vulnerabilidades.
+
+Tenemos como objetivo:
+
+> Aprender y conocer comandos y herramientas para escanear y localizar equipos y recursos.
+>
+> Practicar y probar en el entorno de pruebas con dichas herramientas.
+---
+## ACTIVIDADES A REALIZAR
+- Busca información de:
+	- Como podemos obtener información pública con protocolo whois, web DoaminTools y DSNrecon.
+	- Cómo podemos utilizar Nmap y nikto,   para buscar equipos, puertos abiertos, servicios, vulnerabilidades.
+	- Cómo utilizar Wfuzz, Dirb para localizar recursos web en servidores.
+	- Que scripts que podemos utilizar con Nmap para la búsqueda de vulnerabilidades.
+	- Cómo podemos buscar información de explotación de vulnerabilidades con searchsploit
+- Instala en tu navegador la extensión de Shodan y muestra la información que tenemos tanto de ip, como de dominio del sitio http://iesvalledeljerteplasencia.es 
+- Sobre la red del laboratorio PPS con kali, bWAPP, Multidillae y DVWA:<
+	- Ayudándote del fichero docker-compose localiza las diferentes máquinas y puertos que deberían de tener abiertos.
+	- Identifica los equipos de la Red con Nmap.
+	- Realiza análisis de puertos en las MV.
+	- Encuentra los Servicios y Sistemas Operativos de las MV.
+	- Inspecciona los puertos con nikto.
+	- Busca las vulnerabilidades de las MV con los scripts de Nmap.
+	- Localiza los servicios web que tienen las diferentes máquinas (Wfuzz y Dirb).
+	- Utiliza el comando searchsploit para buscar información de explotación de vulnerabilidades presentes en linux con kernel 5
+---	
+## ENTREGA
+
+>__Realiza las operaciones indicadas__
+
+>__Crea un repositorio  con nombre PPS-Unidad3Actividad2-Tu-Nombre donde documentes la realización de ellos.__
+
+> No te olvides de documentarlo convenientemente con explicaciones, capturas de pantalla, etc.
+
+>__Sube a la plataforma, tanto el repositorio comprimido como la dirección https a tu repositorio de Github.__
