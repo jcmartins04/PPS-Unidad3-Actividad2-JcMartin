@@ -15,7 +15,7 @@ Tenemos como objetivo:
 	- Que [scripts](./doc/nmap.md) podemos utilizar con Nmap para la búsqueda de vulnerabilidades.
 	- Cómo podemos buscar información de explotación de vulnerabilidades con [searchsploit](./doc/exploit.md)
 - Instala en tu navegador la extensión de Shodan y muestra [la información que tenemos](./doc/info.md) tanto de ip, como de dominio del sitio http://iesvalledeljerteplasencia.es 
-- Sobre la red del laboratorio PPS con kali, bWAPP, Multidillae y DVWA:<
+- Sobre la red del laboratorio PPS con kali, bWAPP, Multidillae y DVWA:
 	- Ayudándote del fichero docker-compose localiza las diferentes [máquinas y puertos](./doc/scann2.md) que deberían de tener abiertos.
 	- Identifica los [equipos de la Red](./doc/equipos.md) con Nmap.
 	- Realiza análisis de [puertos en las MV](./doc/puertos.md).
