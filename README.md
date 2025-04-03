@@ -20,8 +20,8 @@ Tenemos como objetivo:
 	- Identifica los [equipos de la Red](./doc/equipos.md) con Nmap.
 	- Realiza análisis de [puertos en las MV](./doc/puertos.md).
 	- Encuentra los [Servicios](./doc/services.md) y Sistemas Operativos de las MV.
-	- Inspecciona los puertos con [nikto](./nikto.md).
-	- Busca las [vulnerabilidades](./doc/vuln.md) de las MV con los scripts de Nmap.
+	- Inspecciona los puertos con [nikto](./doc/nikto.md).
+	- Busca las [vulnerabilidades](./doc/scann2.md) de las MV con los scripts de Nmap.
 	- Localiza los [servicios web](./doc/wfuzz-dirb.md) que tienen las diferentes máquinas (Wfuzz y Dirb).
 	- Utiliza el comando [searchsploit](./doc/exploit2.md) para buscar información de explotación de vulnerabilidades presentes en linux con kernel 5
 ---	
